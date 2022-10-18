@@ -53,6 +53,8 @@ body {
           animation-name: LeftToRight;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  -webkit-backface-visibility: hiden;
+          backface-visibility: hiden;
 }
 .title-first__second {
   display: block;
@@ -67,6 +69,9 @@ body {
           animation-name: RightToLeft;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  -webkit-backface-visibility: hiden;
+          backface-visibility: hiden;
+  margin-bottom: 50px;
 }
 
 @-webkit-keyframes LeftToRight {
@@ -121,4 +126,24 @@ body {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  color: #777777;
+  background: white;
+  display: inline-block;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=style.css.map */
